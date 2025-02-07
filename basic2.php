@@ -34,13 +34,13 @@ $app = array('PHP', 'HTML', 'JavaScript');
 
 // Step 2: Iterate over the PHP array to generate a JavaScript array
 echo "<script>";
-echo "var languages = [";
+echo "var javaarray = [";
 
 // Loop through the PHP array and output JavaScript array values
-foreach ($programmingLanguages as $index => $language) {
-    echo "'$language'";
-    if ($index < count($programmingLanguages) - 1) {
-        echo ", ";  // Add a comma if it's not the last element
+foreach ($app as $index => $javaarray) {
+    echo "'$javaarray'";
+    if ($index < count($app) - 1) {
+        echo ", ";  
     }
 }
 
@@ -49,9 +49,9 @@ echo "];";
   // JavaScript function to display array
 echo "
 window.onload = function() {
-    var output = 'Languages: <br>';
-    for (var i = 0; i < languages.length; i++) {
-        output += languages[i] + '<br>';
+    var output = 'javaarray: <br>';
+    for (var i = 0; i < javaarray.length; i++) {
+        output += javaarray[i] + '<br>';
     }
     // use div element to display page
     var div = document.createElement('div');
