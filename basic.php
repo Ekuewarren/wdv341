@@ -41,7 +41,7 @@ echo "<script type='text/javascript'>";
 echo "var javarray = [";
 
 // go through php array to generate javarray array
-   foreach ($cars as $course) {
+   foreach ($app as $course) {
     echo "'$course', "; // Add each value to the JavaScript array
 }
 
@@ -52,7 +52,7 @@ echo "console.log(javarray);";
 
 echo "</script>";
 
-echo '<a href="http://ablode.org/wdv341/index.php">Go to Home Page</a>';
+echo '<a href="http:localhost/wdv341/index.php">Go to Home Page</a>';
 
 
 ?>
